@@ -115,7 +115,8 @@
         if (checkCollision()) {
             isGameOver = true;
             ctx.font = "100px Georgia";
-            ctx.fillText("GAME OVER", 200, 350, 200);
+            ctx.fillStyle = "red";
+            ctx.fillText("YOU DIED", 200, 350, 200);
             cancelAnimationFrame(intervalId);
         } else {
             intervalId = requestAnimationFrame(moveObstacle);
