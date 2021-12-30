@@ -59,5 +59,6 @@ class Background {
         ctx.drawImage(image, this._x, this._y, this._width, this._height);
         ctx.font = "20px Georgia"
         ctx.fillText("score:"+ score, 500,100, 100)
+        ctx.fillText("highscore: " + localStorage.getItem("highscore") + " by " + localStorage.getItem("name"),50,50)
     }
 }

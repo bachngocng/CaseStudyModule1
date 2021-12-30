@@ -126,6 +126,11 @@
             ctx.font = "100px Georgia";
             ctx.fillStyle = "red";
             ctx.fillText("YOU DIED", 200, 350, 200);
+            if (localStorage.getItem("highscore") < score){
+                localStorage.setItem("highscore",score);
+                let name = prompt("nhập tên của bạn");
+                localStorage.setItem("name", name);
+            }
             cancelAnimationFrame(intervalId);
         }
         if (checkCollision2()) {
@@ -222,6 +227,7 @@
             axe._speed = axe._speed + 0.1;
         }
     }
+
 
     document.addEventListener('keydown', moveNinja);
 
