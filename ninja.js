@@ -70,13 +70,13 @@ class Ninja {
         this._y += this._speed;
     }
 
-    // moveRight() {
-    //     this._x += this._speed;
-    // }
-    //
-    // moveLeft() {
-    //     this._x -= this._speed;
-    // }
+    moveRight() {
+        this._x += this._speed;
+    }
+
+    moveLeft() {
+        this._x -= this._speed;
+    }
 
     drawNinja(ctx) {
         let image = new Image();
