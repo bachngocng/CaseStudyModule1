@@ -47,18 +47,18 @@
                     }
                     ninjaGo.moveUp();
                     break;
-                // case 39:
-                //     if (ninjaGo.x + ninjaGo.width > canvas.clientWidth) {
-                //         return;
-                //     }
-                //     ninjaGo.moveRight();
-                //     break;
-                // case 37:
-                //     if (ninjaGo.x < 0) {
-                //         return;
-                //     }
-                //     ninjaGo.moveLeft();
-                //     break;
+                case 39:
+                    if (ninjaGo.x + ninjaGo.width > canvas.clientWidth) {
+                        return;
+                    }
+                    ninjaGo.moveRight();
+                    break;
+                case 37:
+                    if (ninjaGo.x < 0) {
+                        return;
+                    }
+                    ninjaGo.moveLeft();
+                    break;
                 case 40:
                     if (ninjaGo.y + ninjaGo.height > canvas.clientHeight) {
                         return;
